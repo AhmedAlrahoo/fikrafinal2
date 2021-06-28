@@ -1,0 +1,124 @@
+@media screen and (max-width:780px){
+    .dew{
+        display: none;
+    }
+  }
+  
+  nav{
+     align-items: center;
+     padding-left: 50px;
+     padding-right: 50px;
+  }
+  #logo{
+    float: left;
+    font-weight: 700;
+    font-size: 20px;
+    list-style: none;
+  }
+  nav li{
+    margin-top: 40px;
+  }
+  
+  nav>li .link{
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    
+  }
+  nav>li .link:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links{
+    margin-top: 5px;
+    display: flex;
+    list-style: none;
+    width: 600px;
+    justify-content: space-around;
+    float: right;
+  }
+  .nav-links  li .link{
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s ease-in-out;
+  }
+  .nav-links  li .link:hover{
+    color: #ffffff;
+  }
+  @media screen and (max-width:870px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: rgb(231, 231, 231);
+        margin: 5px;
+        transition: .2s ease-in-out;
+    }
+    .line1{
+        transform: rotate(40deg);
+        margin-bottom: -2px;
+    }
+    .line2{
+      display: none;
+    }
+    .line3{
+      transform: rotate(135deg);
+      margin-top: 0px;
+    }
+    nav{
+        position: relative;
+            align-items: center;
+            padding-left: 0px;
+            padding-right: 20px;         
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 3%;
+        top: 30px;
+        transform: translate(-5%,-50%);
+        z-index: 3;
+    }
+  
+    .nav-links{
+    position: fixed;
+    background-color: rgb(29, 29, 29);
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0%;
+    padding-left: 40px;
+    /* clip-path: circle(10px at 90% -10%);
+    -wibkit-clip-path: circle(10px at 90% -10%); */
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+    z-index: 2;
+    }
+    .nav-links li{
+      margin-top: 30px;
+      
+    }
+    .nav-links.open{
+        /* clip-path: circle(1300px at 90% -10%);
+        -wibkit-clip-path: circle(1300px at 90% -10%); */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        pointer-events: all;
+    }
+    nav>li{
+        margin-top: 13px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: rgb(231, 231, 231);
+    }
+    nav>li .link{
+        text-decoration: none;
+        list-style: none;
+        color: rgb(231, 231, 231);
+    }
+    nav>li .link:hover{
+      color: #ffffff;
+    }
+  }
+  /*******************   End Navvvvv ****************/

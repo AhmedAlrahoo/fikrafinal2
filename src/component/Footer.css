@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+}
+.footer div:first-of-type > *{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out; 
+}
+.footer div:last-of-type{
+    color:#aaa;
+    text-align: center;
+}

@@ -1,0 +1,142 @@
+:root{
+    --primary: #11A0FF;
+    --fields: rgba(17, 160, 255, .05);
+    --highlight: #05C9E8;
+}
+
+.login-form *{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+.login-form .registration{
+    display: flex;
+}
+.login-form .image{
+    background-image: url(../../images/labscan.jpg);
+    height: 100vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position-x: 80%;
+    background-size: cover;
+}
+.login-form .image h1{
+    margin: 30px;
+}
+.login-form .wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form .inputSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+}
+.login-form .wrapper .illustration{
+    flex:3;
+    width: 100%;
+    background-image: url(../../images/illustration.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login-form .inputSide .inputs{
+    display: flex;
+    flex-direction: column;
+}
+.login-form form{
+    flex: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.login-form form > *{
+    margin: 16px 0;
+}
+.login-form form h3{
+    color: var(--highlight);
+    font-size: 2rem;
+    border-bottom: 2px solid var(--highlight);
+}
+.login-form .inputs{
+    width: 100%;
+}
+.login-form .inputs input{
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--fields);  
+}
+.login-form .bottomForm{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.login-form .bottomForm button{
+    background-color: var(--fields);
+    border: none;
+    border-radius: 2px;
+    color: var(--highlight);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.login-form .bottomForm h4{
+    color: rgba(255, 0, 0, 0.671);
+}
+@media screen and (max-width: 600px) {
+    .login-form .image{
+        display: none;
+    }
+    .login-form .wrapper{
+        width: 80%;
+        }
+    .login-form .inputSide{
+        height: 100vh;
+        width: 100%;
+        margin-top: 0;
+    }
+    .login-form .wrapper .illustration{
+        flex:2;
+    }
+    .login-form form{
+        flex: 3;
+    }
+    .login-form .bottomForm{
+        flex-direction: column-reverse;
+    }
+    .login-form .bottomForm button{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 20px;
+    }
+    .login-form .bottomForm h4{
+        color: rgba(255, 0, 0, 0.671);
+        margin-bottom: 18px;
+        margin-top: -8px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .login-form .bottomForm button{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 16px;
+    }
+    .login-form .bottomForm h4{
+        color: rgba(255, 0, 0, 0.671);
+        font-size: 12px;
+    }
+}
